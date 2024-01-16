@@ -1,0 +1,39 @@
+.my-works {
+    padding-bottom: 60px;
+}
+
+.my-works__wrapper {
+    display: grid;
+    grid-template-rows: repeat(2, 280px);
+    margin-top: 60px;
+    gap: 5px;
+
+    grid-template-areas:
+            "p1 p2 p3 p4"
+            "p5 p6 p6 p4";
+
+}
+
+#project-1 {
+    grid-area: p1;
+}
+
+#project-2 {
+    grid-area: p2;
+}
+
+#project-3 {
+    grid-area: p3;
+}
+
+#project-4 {
+    grid-area: p4;
+}
+
+#project-5 {
+    grid-area: p5;
+}
+
+#project-6 {
+    grid-area: p6;
+}

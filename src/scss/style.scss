@@ -1,0 +1,37 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+/*base*/
+@import "base/mixin";
+@import "base/reset";
+@import "base/varibles";
+
+/*blocks*/
+@import "blocks/promo";
+@import "blocks/aside";
+@import "blocks/about";
+@import "blocks/skill";
+@import "blocks/experience";
+@import "blocks/my-work";
+@import "blocks/cost-project";
+@import "blocks/contacts";
+
+/*components*/
+@import "components/container";
+@import "components/title";
+@import "components/header";
+@import "components/buttons";
+@import "components/icon-circle";
+@import "components/form";

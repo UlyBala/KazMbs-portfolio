@@ -1,0 +1,91 @@
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.section-title-center {
+    text-align: center;
+}
+
+.section-title-left {
+    text-align: left;
+}
+
+.line {
+    display: inline-block;
+    width: 60px;
+    height: 2px;
+    background-color: $main-color;
+
+    &_mt25 {
+        margin-top: 2.5rem;
+    }
+
+    &_mb25 {
+        margin-bottom: 2.5rem;
+    }
+}
+
+.title-with-circle {
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+    z-index: 3;
+
+    &:before {
+        content: '';
+        display: inline-block;
+        width: 3.6rem;
+        height: 3.6rem;
+        border-radius: 100%;
+        background-color: $main-color;
+        position: absolute;
+        top: 50%;
+
+        transform: translateY(-50%);
+        z-index: -1;
+    }
+}
+
+.ml {
+    margin-left: 10px;
+}
+
+.title-with-circle_left:before {
+    position: absolute;
+    left: -10px;
+}
+
+.center:before {
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+.p_500 {
+    font-weight: 500;
+}
+
+.p_700 {
+    font-weight: 700;
+}

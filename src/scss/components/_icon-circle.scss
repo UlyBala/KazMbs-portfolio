@@ -1,0 +1,19 @@
+.icon-circle {
+    display: block;
+    width: 100%;
+    max-width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    background-color: $main-color;
+    position: relative;
+
+    svg {
+        position: absolute;
+        top: 15px;
+        left: 20px;
+    }
+}
+
+.rotate {
+    transform: rotate(90deg);
+}

@@ -1,0 +1,23 @@
+.contact {
+    padding-bottom: 100px;
+}
+
+.contact__wrapper {
+    display: grid;
+    grid-template-columns: 400px 580px;
+    grid-template-rows: 100px 500px;
+    column-gap: 7rem;
+}
+
+.contact__image {
+    grid-row: 1/3;
+}
+
+.contact__icon-list {
+    display: flex;
+    column-gap: 25px;
+}
+
+.contact__icon-list {
+    margin: 10px 0;
+}

@@ -1,0 +1,21 @@
+.promo {
+    min-height: 100vh;
+    background: url("../images/promo/background.jpg") 50%/cover no-repeat;
+    padding: 22.6rem 0;
+}
+
+.promo__links {
+    margin-top: 2.5rem;
+}
+
+.promo__link {
+    padding: 12px 25px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+
+    &_active {
+        background: #FFA501;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    }
+}
