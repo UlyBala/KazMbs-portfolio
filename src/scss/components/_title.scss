@@ -89,3 +89,14 @@ p {
 .p_700 {
     font-weight: 700;
 }
+
+
+@media (max-width: 992px) {
+    h2 {
+        font-size: 25px;
+    }
+
+    .title-with-circle {
+        font-size: 14px;
+    }
+}

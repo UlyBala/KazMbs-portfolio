@@ -116,44 +116,46 @@
                 </div>
             </header>
 
-            <nav class="nav">
+            <div class="nav">
                 <div class="nav__inner">
                     <svg class="nav__close" width="29" height="30">
                         <use xlink:href="#close"></use>
                     </svg>
-                    <ul class="nav__list">
-                        <li class="nav__list__item">
-                            <div class="item__circle"></div>
-                            <a href="#">ПРО МЕНЯ</a>
-                        </li>
+                    <nav>
+                        <ul class="nav__list">
+                            <li class="nav__list__item">
+                                <div class="item__circle"></div>
+                                <a href="#">ПРО МЕНЯ</a>
+                            </li>
 
-                        <li class="nav__list__item">
-                            <div class="item__circle"></div>
-                            <a href="#">МОЙ ОПЫТ</a>
-                        </li>
+                            <li class="nav__list__item">
+                                <div class="item__circle"></div>
+                                <a href="#">МОЙ ОПЫТ</a>
+                            </li>
 
-                        <li class="nav__list__item">
-                            <div class="item__circle"></div>
-                            <a href="#">МОИ НАВЫКИ</a>
-                        </li>
+                            <li class="nav__list__item">
+                                <div class="item__circle"></div>
+                                <a href="#">МОИ НАВЫКИ</a>
+                            </li>
 
-                        <li class="nav__list__item">
-                            <div class="item__circle"></div>
-                            <a href="#">МОИ РАБОТЫ</a>
-                        </li>
+                            <li class="nav__list__item">
+                                <div class="item__circle"></div>
+                                <a href="#">МОИ РАБОТЫ</a>
+                            </li>
 
-                        <li class="nav__list__item">
-                            <div class="item__circle"></div>
-                            <a href="#">ПРАЙС-ЛИСТ</a>
-                        </li>
+                            <li class="nav__list__item">
+                                <div class="item__circle"></div>
+                                <a href="#">ПРАЙС-ЛИСТ</a>
+                            </li>
 
-                        <li class="nav__list__item">
-                            <div class="item__circle"></div>
-                            <a href="#">КОНТАКТЫ</a>
-                        </li>
-                    </ul>
+                            <li class="nav__list__item">
+                                <div class="item__circle"></div>
+                                <a href="#">КОНТАКТЫ</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-            </nav>
+            </div>
 
             <aside class="sidebar">
                 <ul class="sidebar__list">
@@ -207,7 +209,10 @@
                     <div class="container">
                         <div class="about__wrapper">
                             <div class="about__image">
-                                <img src="./src/images/Photo.jpg" alt="img">
+                                <picture>
+                                    <source srcset="./src/images/Photo.jpg" media="(min-width: 992px)" />
+                                    <img src="./src/images/Photo-min.jpg" alt="img">
+                                </picture>
                             </div>
 
                             <div class="about__description">
@@ -508,28 +513,28 @@
                             <div class="line"></div>
                         </div>
 
-                        <ul class="my-works__wrapper">
-                            <li id="project-1">
+                        <ul class="my-works__wrapper-list">
+                            <li class="my-works__wrapper-list-item" id="project-1">
                                 <img src="./src/images/my-work/uber.jpg" alt="my work 1">
                             </li>
 
-                            <li id="project-2">
+                            <li class="my-works__wrapper-list-item" id="project-2">
                                 <img src="./src/images/my-work/pulse.jpg" alt="my work 2">
                             </li>
 
-                            <li id="project-3">
+                            <li class="my-works__wrapper-list-item" id="project-3">
                                 <img src="./src/images/my-work/bread.jpg" alt="my work 3">
                             </li>
 
-                            <li id="project-4">
+                            <li class="my-works__wrapper-list-item" id="project-4">
                                 <img src="./src/images/my-work/plans.jpg" alt="my work 4">
                             </li>
 
-                            <li id="project-5">
+                            <li class="my-works__wrapper-list-item" id="project-5">
                                 <img src="./src/images/my-work/ipad.jpg" alt="my work 5">
                             </li>
 
-                            <li id="project-6">
+                            <li class="my-works__wrapper-list-item" id="project-6">
                                 <img src="./src/images/my-work/mac.jpg" alt="my work 6">
                             </li>
                         </ul>
@@ -599,6 +604,7 @@
                     </div>
                 </section>
 
+
                 <section class="contact">
                     <div class="container">
                         <div class="contact__wrapper">
@@ -651,9 +657,9 @@
                                         <label class="form__label" for="userText">Ваше сообщение</label>
                                         <textarea id="userText"></textarea>
                                     </div>
-
-                                    <button class="btn" type="submit" form="form1">Отправить сообщение</button>
                                 </form>
+
+                                <button class="btn" type="submit" form="form1">Отправить сообщение</button>
                             </div>
                         </div>
                     </div>

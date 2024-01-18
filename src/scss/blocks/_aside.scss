@@ -32,3 +32,9 @@
         transform: rotate(-90deg) translate(-30%, -240%);
     }
 }
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+}

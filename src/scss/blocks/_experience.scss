@@ -30,7 +30,7 @@
 .experience__wrapper-percent-list {
     display: grid;
     grid-template-rows: repeat(2, minmax(70px, auto));
-    grid-template-columns: repeat(3, minmax(270px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: 30px 45px;
 }
 
@@ -80,4 +80,24 @@
     .w20 {
         width: 20%;
     }
+}
+
+@media (max-width: 1200px) {
+    .experience__wrapper-list {
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        justify-content: center;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 730px;
+    }
+
+   /* .experience__wrapper-percent-list {
+        grid-template-rows: repeat(3, minmax(70px, auto));
+        grid-template-columns: repeat(2, minmax(270px, auto));
+        gap: 10px 20px;
+    }*/
+
 }
